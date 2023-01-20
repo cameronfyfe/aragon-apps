@@ -1,4 +1,4 @@
-const config = require('@aragon/hardhat-config')
+const config = require('../../hardhat.config')
 
 config.solidity.settings.optimizer.runs = 200
 
