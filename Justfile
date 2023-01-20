@@ -2,6 +2,8 @@ just := 'just --justfile ' + justfile() + ' --working-directory .'
 node16 := just + ' __node16'
 node12 := just + ' __node12'
 
+hardhat := 'yarn hardhat --config ./hardhat.config.js'
+
 NETWORK := env_var('NETWORK')
 
 default:
@@ -31,7 +33,7 @@ build-app-ui APP:
     cd apps/{{APP}} && {{node16}} yarn build
 
 publish-app APP +FLAGS='':
-    cd apps/{{APP}} && {{node16}} yarn hardhat publish major {{FLAGS}} --network {{NETWORK}}
+    cd apps/{{APP}} && {{node16}} {{hardhat}} publish major {{FLAGS}} --network {{NETWORK}}
 
 __node16 +CMD:
     nix develop .#node16 --command bash -c '{{CMD}}'
