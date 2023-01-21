@@ -23,6 +23,10 @@ module.exports = {
       url: `https://eth-goerli.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
       accounts: [EVM_PRIVATE_KEY]
     },
+    mumbai: {
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [EVM_PRIVATE_KEY],
+    },
     wallaby: {
       url: "https://wallaby.node.glif.io/rpc/v0",
       accounts: [EVM_PRIVATE_KEY],
