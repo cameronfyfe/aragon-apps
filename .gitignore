@@ -33,3 +33,4 @@ package-lock.json
 .cache
 .env
 publish.log
+_env

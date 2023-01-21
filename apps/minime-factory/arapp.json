@@ -65,6 +65,11 @@
       "registry": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e",
       "appName": "minime-factory.aragonpm.eth",
       "network": "goerli"
+    },
+    "localhost": {
+      "registry": "0xa16E02E87b7454126E5E10d957A927A7F5B5d2be",
+      "appName": "minime-factory.aragonpm.eth",
+      "network": "localhost"
     }
   },
   "roles": []

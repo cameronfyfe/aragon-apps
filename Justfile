@@ -34,6 +34,8 @@ build-app-ui APP:
 
 publish-app APP +FLAGS='':
     cd apps/{{APP}} && {{node16}} {{hardhat}} publish major {{FLAGS}} --network {{NETWORK}}
+    mkdir -p _env
+    cp apps/{{APP}}/_env/.env* _env/
 
 __node16 +CMD:
     nix develop .#node16 --command bash -c '{{CMD}}'
