@@ -19,6 +19,9 @@ module.exports = {
     deployer: 0,
   },
   networks: {
+    localhost: {
+      accounts: [EVM_PRIVATE_KEY]
+    },
     goerli: {
       url: `https://eth-goerli.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
       accounts: [EVM_PRIVATE_KEY]
