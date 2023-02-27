@@ -1,6 +1,0 @@
-**
-!/.gitignore
-!/.npmignore
-!/build.sh
-!/package.json
-!/publish-commit.sh
