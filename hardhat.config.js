@@ -1,9 +1,12 @@
 require("@nomiclabs/hardhat-etherscan")
 require("@nomiclabs/hardhat-ethers")
-require("@aragon/hardhat-aragon")
+require("@eqty/hardhat-aragon")
 
-const EVM_PRIVATE_KEY = process.env.EVM_PRIVATE_KEY || '';
-const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY || '';
+const EVM_PRIVATE_KEY = process.env.EVM_PRIVATE_KEY || '0x0000000000000000000000000000000000000000';
+
+const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL || '';
+const HYPERSPACE_RPC_URL = process.env.HYPERSPACE_RPC_URL || '';
+const MUMBAI_RPC_URL = process.env.MUMBAI_RPC_URL || '';
 
 module.exports = {
   solidity: {
@@ -23,20 +26,16 @@ module.exports = {
       accounts: [EVM_PRIVATE_KEY]
     },
     goerli: {
-      url: `https://eth-goerli.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
+      url: GOERLI_RPC_URL,
       accounts: [EVM_PRIVATE_KEY]
     },
     mumbai: {
-      url: "https://rpc-mumbai.maticvigil.com",
-      accounts: [EVM_PRIVATE_KEY],
-    },
-    wallaby: {
-      url: "https://wallaby.node.glif.io/rpc/v0",
+      url: MUMBAI_RPC_URL,
       accounts: [EVM_PRIVATE_KEY],
     },
     hyperspace: {
       chainId: 3141,
-      url: "https://api.hyperspace.node.glif.io/rpc/v0",
+      url: HYPERSPACE_RPC_URL,
       accounts: [EVM_PRIVATE_KEY],
     }
   },

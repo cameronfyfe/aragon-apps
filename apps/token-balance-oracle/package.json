@@ -20,7 +20,7 @@
   "description": "ACL Oracle enforcing token ownership",
   "devDependencies": {
     "@aragon/cli": "^6.0.0",
-    "@aragon/hardhat-aragon": "github:cameronfyfe/hardhat-aragon",
+    "@eqty/hardhat-aragon": "0.1.0-main-974630f",
     "@aragon/test-helpers": "^2.1.0",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-etherscan": "^2.1.6",

@@ -51,7 +51,7 @@
     "web3-utils": "^1.0.0"
   },
   "devDependencies": {
-    "@aragon/hardhat-aragon": "github:cameronfyfe/hardhat-aragon",
+    "@eqty/hardhat-aragon": "0.1.0-main-974630f",
     "@aragon/test-helpers": "^2.0.0",
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
