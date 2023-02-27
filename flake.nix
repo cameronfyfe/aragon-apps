@@ -37,7 +37,7 @@
 
         devShells = {
           default = pkgs.mkShell {
-            buildInputs = commonPkgs;
+            buildInputs = commonPkgs ++ nodeAndYarn16;
           };
           node16 = pkgs.mkShell {
             buildInputs = commonPkgs ++ nodeAndYarn16;
